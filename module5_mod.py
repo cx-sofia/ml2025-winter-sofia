@@ -7,7 +7,7 @@ class IntList():
     if len(self.nums) < self.n:
       self.nums.append(num)
     else:
-      raise Error("Redundant Number")
+      raise IndexError("Redundant Number")
 
   def get_index(self, target):
     if target in self.nums:
